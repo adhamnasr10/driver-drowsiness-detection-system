@@ -1,0 +1,15 @@
+# =============================================================================
+# requirements.txt — Driver Drowsiness Detection System
+# =============================================================================
+# Install with:  pip install -r requirements.txt
+#
+# Note: winsound is part of the Python standard library on Windows;
+#       it does NOT need to be listed here.
+
+# Core computer-vision and ML
+opencv-python>=4.9.0
+mediapipe>=0.10.14       # Tasks API (FaceLandmarker) introduced in 0.10.x
+
+# NumPy is pulled in by both OpenCV and MediaPipe, but we pin it explicitly
+# to avoid version conflicts.
+numpy>=1.26.0
